@@ -1,5 +1,10 @@
-## 🛠️ Installation
+# Vision Transformer (ViT) - From Scratch
 
+## 🔍 Overview
+
+
+
+## 🛠️ Installation
 Clone the repo:
 
 ```bash
