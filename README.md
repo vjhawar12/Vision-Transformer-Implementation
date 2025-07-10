@@ -2,7 +2,7 @@
 
 ## 🔍 Overview
 
-
+This project provides an implementation of the research paper "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale". Using Pytorch, features like patch embeddings, multi-head self attention, encoders, and the ViT are implemented from scratch. This project then trains the ViT on CIFAR-10 and records 11 trials. The model performs with 85.7% accuracy on the final test set.  
 
 ## 🛠️ Dependency installation
 Clone the repo:
@@ -26,7 +26,6 @@ pip install -r requirements.txt
 jupyter notebook Vision_Transformer_from_scratch.ipynb
 ```
 
-  Or use Google Colab
-
+Or use Google Colab.
 
 2. Run all cells sequentially.
