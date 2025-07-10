@@ -4,7 +4,7 @@
 
 
 
-## 🛠️ Installation
+## 🛠️ Dependency installation
 Clone the repo:
 
 ```bash
@@ -17,3 +17,16 @@ Install the dependencies:
 ```bash
 pip install -r requirements.txt
 ```
+
+## 🚀 Running the Notebook
+
+1. Open the notebook:
+
+```bash
+jupyter notebook Vision_Transformer_from_scratch.ipynb
+```
+
+  Or use Google Colab
+
+
+2. Run all cells sequentially.
