@@ -53,6 +53,6 @@ Option B: Use Google Colab.
           Run all cells sequentially.
 
 
-**Results**
+## Results ##
 - CIFAR‑10 test accuracy: 85.7%
 - Regularization: MixUp, CutMix, stochastic depth
