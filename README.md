@@ -51,3 +51,8 @@ jupyter notebook Vision_Transformer_from_scratch.ipynb
 Option B: Use Google Colab.
 
           Run all cells sequentially.
+
+
+**Results**
+- CIFAR‑10 test accuracy: 85.7%
+- Regularization: MixUp, CutMix, stochastic depth
