@@ -5,7 +5,7 @@ from torchvision.transforms.v2 import RandomChoice
 
 def train(vit, device, cutmix_or_mixup_start, mixup_start, max_cutmix_or_mixup, max_mixup, optim, mixup, cutmix, sft_loss_fn, loss_fn, scaler, i, loop):
     total, correct = 0, 0
-    
+
     for j, (input, labels) in enumerate(loop, 1):
         input, labels = input.to(device), labels.to(device)
         optim.zero_grad()
