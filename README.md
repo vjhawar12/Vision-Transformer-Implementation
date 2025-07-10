@@ -12,19 +12,19 @@ I took on this project to deepen my understanding of attention-based models and 
 
 This project is a PyTorch-based implementation of the paper “An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale.” It builds the Vision Transformer (ViT) architecture from scratch, including:
 
-    Patch embeddings
+**Patch embeddings**
 
-    Multi-head self-attention
+**Multi-head self-attention**
 
-    Transformer encoders
+**Transformer encoders**
 
 The training pipeline also integrates:
 
-    Regularization: stochastic depth, dropout
+**Regularization: stochastic depth, dropout**
 
-    Data augmentation: CutMix, MixUp, horizontal flip, and color jitter
+**Data augmentation: CutMix, MixUp, horizontal flip, and color jitter**
 
-The model is trained and evaluated on the CIFAR-10 dataset, achieving a final test accuracy of 85.7%.
+The model is trained and evaluated on the CIFAR-10 dataset, achieving a final test accuracy of **85.7%**.
 
 ## 🛠️ Dependency installation
 Clone the repo:
