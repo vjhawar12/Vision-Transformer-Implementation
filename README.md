@@ -1,12 +1,12 @@
 # Vision Transformer (ViT) - From Scratch
 
 ## 🧠  Motivation: Why Vision Transformers?
-Convolutional Neural Networks have traditionally dominated image classification tasks due to their strong inductive biases which enable efficient learning from relatively small datasets. Architectures like MobileNet and EfficientNet push this efficiency even further, while deeper models like ResNet-50 consistently achieve high accuracy, reaching ~95% on benchmarks such as CIFAR-10.
 
-Vision Transformers (ViTs), by contrast, take a fundamentally different approach. Instead of using convolutions, they model images as sequences of patches and apply self-attention to capture long-range dependencies across the entire image. Introduced in "Attention Is All You Need", the attention mechanism allows ViTs to learn more flexible, global representations. They, do, however, require lots of data and compute to perform well. 
+Convolutional Neural Networks (CNNs) have traditionally dominated image classification tasks due to their strong inductive biases—such as locality and translation equivariance—which enable efficient learning from relatively small datasets. Architectures like MobileNet and EfficientNet optimize for speed and efficiency, while deeper models like ResNet-50 consistently achieve high accuracy, reaching ~95% on benchmarks like CIFAR-10.
 
-I chose to implement a ViT to explore how attention can be applied to tasks outside natural language processing--specifically, computer vision. I was curious to learn how shifting my perspective from convolutions to attention offers a different set of trade-offs in terms of scalability and data requirements, but also the potential for richer feature representations.
+Vision Transformers (ViTs), by contrast, represent a fundamentally different approach. Rather than using convolutions, they treat images as sequences of patches and apply self-attention to model long-range dependencies across the entire image. Originally introduced in "Attention Is All You Need", the attention mechanism enables ViTs to learn more flexible, global representations—but often at the cost of increased data and compute requirements.
 
+I chose to implement a ViT to explore how attention-based architectures can be applied to domains beyond natural language processing—specifically, computer vision. I was curious to see how shifting from convolutional priors to a fully attention-based model would affect the trade-offs around scalability, data efficiency, and the richness of learned representations.
 
 ## 🔍 Overview
 
