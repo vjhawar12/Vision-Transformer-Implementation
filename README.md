@@ -53,7 +53,7 @@ Option B: Use Google Colab.
 Run all cells sequentially.
 
 
-## Results ##
+## 🧪 Results ##
 
 I trained the ViT using AdamW optimizer, a learning rate scheduler, and various pre-processing and image augmentation techniques.
 
