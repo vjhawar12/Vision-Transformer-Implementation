@@ -7,7 +7,10 @@ def test(vit, test_dataloader, device):
         for image, label in test_dataloader:
             image, label = image.to(device), label.to(device)
 
-            with torch.amp.autocast(device_type="cuda"):
+            if torch.cuda.is_available():
+                with torch.amp.autocast(device_type="cuda"):
+                    output = vit(image)
+            else:
                 output = vit(image)
 
             pred = torch.argmax(output, dim=1)
