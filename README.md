@@ -24,7 +24,7 @@ The training pipeline also integrates:
 
 **Data augmentation: CutMix, MixUp, horizontal flip, random crop, and color jitter**
 
-The model is trained and evaluated on the CIFAR-10 dataset, achieving a final test accuracy of **85.7%**.
+The model is trained and evaluated on the CIFAR-10 dataset, achieving a final test accuracy of **86.3%**.
 
 ## 🛠️ Dependency installation
 Clone the repo:
@@ -57,7 +57,7 @@ Run all cells sequentially.
 
 I trained the ViT using AdamW optimizer, a learning rate scheduler, and various pre-processing and image augmentation techniques.
 
-CIFAR‑10 test accuracy: 85.7%
+CIFAR‑10 test accuracy: 86.3%
 
 📄 See the exact hyperparameters used in [`hyperparams.json`](hyperparams.json).
 
