@@ -22,7 +22,7 @@ The training pipeline also integrates:
 
 **Regularization: stochastic depth, dropout**
 
-**Data augmentation: CutMix, MixUp, horizontal flip, and color jitter**
+**Data augmentation: CutMix, MixUp, horizontal flip, random crop, and color jitter**
 
 The model is trained and evaluated on the CIFAR-10 dataset, achieving a final test accuracy of **85.7%**.
 
@@ -57,8 +57,9 @@ Run all cells sequentially.
 
 I trained the ViT using AdamW optimizer, a learning rate scheduler, and various pre-processing and image augmentation techniques.
 
-- CIFAR‑10 test accuracy: 85.7%
-- Regularization: MixUp, CutMix, stochastic depth, dropout
-- Pre-processing: Color Jitter, Horizontal Flip, RandomCrop 
+CIFAR‑10 test accuracy: 85.7%
 
 📄 See the exact hyperparameters used in [`hyperparams.json`](hyperparams.json).
+
+
+
