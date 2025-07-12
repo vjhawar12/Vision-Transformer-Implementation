@@ -56,6 +56,7 @@ Run all cells sequentially.
 ## 🧪 Results ##
 
 I trained the ViT using AdamW optimizer, a learning rate scheduler, and various pre-processing and image augmentation techniques.
+The NVIDIA A100 GPU was used for CUDA acceleration @ 20 seconds per epoch for 100 epochs. 
 
 CIFAR‑10 top-1 accuracy: 86.3%
 
