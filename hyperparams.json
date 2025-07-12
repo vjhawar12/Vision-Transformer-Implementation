@@ -14,5 +14,5 @@
     "max_mixup": 0.5,
     "max_cutmix_or_mixup":  0.5,
     "alpha": 0.25,
-    "mixup_bias": 0.7,
+    "mixup_bias": 0.7
 }
