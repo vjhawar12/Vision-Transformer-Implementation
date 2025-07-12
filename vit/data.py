@@ -34,5 +34,5 @@ data = {
     'Dropout regularization value': [None, 0.15, 0.15, 0.15, 0.15, 0.15, 0.10, 0.05, 0.05, 0.05, 0.05],
     'Data Augmentation': [None, None, "Jittering + horizontal flip", "Jittering + random crop + horizontal flip", "Jittering + random crop + horizontal flip",  "Jittering + random crop + horizontal flip", "Jittering + random crop + horizontal flip", "Jittering + random crop + horizontal flip + mild mixup starting at epoch 20", "Jittering + random crop + horizontal flip + mild mixup starting at epoch 20" , "Jittering + random crop + horizontal flip + mild mixup starting at epoch 10", "Jittering + random crop + horizontal flip + mild mixup starting at epoch 10 + mild cutmix starting at epoch 20"],
     'Scheduler': [None, None, None, "Cosine Annealing LR", "Cosine Annealing LR", "Cosine Annealing LR", "Cosine Annealing LR", "Cosine Annealing LR + linear warmup", "Cosine Annealing LR + linear warmup", "Cosine Annealing LR + linear warmup", "Custom scheduler implementation: Linear warmup + hold for 30 epochs + cosine decay"],
-    'Accuracy %': [23.24, 23.24, 33.36, 10.00, 37.53,  70.49, 71.44, 75.69, 83.07, 84.21, 86.3],
+    'Accuracy %': [23.24, 23.24, 33.36, 10.00, 37.53,  70.49, 71.44, 75.69, 83.07, 84.21, 85.88],
 }
