@@ -1,4 +1,22 @@
-""" Here is the data I collected over 11 trials. It is more easily viewed in the Vision_Transformer_from_scratch.ipynb file under 'notebook'. """
+"""
+Experimental Results Summary (11 Trials)
+
+This dictionary contains the hyperparameter settings and corresponding accuracy results 
+from 11 different experimental trials of the Vision Transformer (ViT) model. The full 
+experimental workflow and visualizations can be found in the `Vision_Transformer_from_scratch.ipynb` 
+notebook under the 'notebook' directory.
+
+Each entry in the dictionary represents a key experimental variable or result. Keys map to lists, 
+where each index corresponds to a particular trial (e.g., index 0 = Trial #1).
+
+For clarity:
+- Learning rates that include weight decay are represented as strings.
+- Loss function variants (e.g. label smoothing) are labeled where applicable.
+- Scheduler entries document when custom schedulers were introduced.
+
+Use this dictionary to analyze the impact of image size, patch size, embedding dimension, 
+attention heads, optimizer, and regularization techniques on final test accuracy.
+"""
 
 data = {
     'Trial #': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
