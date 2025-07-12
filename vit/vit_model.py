@@ -3,11 +3,21 @@ import torch.nn as nn
 from math import sqrt
 from timm.models.layers import DropPath
 
-# image pre-processing helper class
-
+# ---------------------------------------------
+# Patch Embedding Layer: Converts image into patch embeddings
+# ---------------------------------------------
 class PatchEmbedding(nn.Module):
 
     def __init__(self, batches=32, in_channels=3, patch_size=16, size=128, embed_dim=768):
+        """
+        Args:
+            batches (int): Batch size.
+            in_channels (int): Number of input image channels (e.g. 3 for RGB).
+            patch_size (int): Size of each square patch.
+            size (int): Input image height/width.
+            embed_dim (int): Dimension to embed each patch into.
+        """
+        
         super().__init__()
 
         assert size % patch_size == 0, "Image size must be divisible by patch size"
@@ -39,7 +49,9 @@ class PatchEmbedding(nn.Module):
         return x
     
 
-# A head has unique Q, K, V matrices and computes attention
+# ---------------------------------------------
+# Multi-Head Self-Attention Layer (manual implementation). Each head has unique Q, K, V matrices and computes attention
+# ---------------------------------------------
 
 class ManualMultiHeadSelfAttention(nn.Module):
     def __init__(self, embed_dim=768, heads=12, dropout=0.15):
@@ -86,15 +98,28 @@ class ManualMultiHeadSelfAttention(nn.Module):
         return x
 
     def compute_attention(self, Q, K, V):
+        # Attention(Q, K, V) = softmax(QK^T / sqrt(d)) * V
+        
         K_T = torch.transpose(K, -2, -1) # transpose so that multiplication is defined
         scaling = sqrt(self.head_dim)
         val = torch.matmul(Q, K_T) / scaling
 
         return torch.matmul(torch.softmax(val, dim=-1), V)
 
+# ---------------------------------------------
+# Transformer Encoder Block
+# ---------------------------------------------
 
 class TransformerEncoder(nn.Module):
     def __init__(self, embed_dim=768, heads=12, dropout=0.15):
+        """
+        A single transformer encoder block with MHSA and MLP.
+
+        Args:
+            embed_dim (int): Embedding dimension.
+            heads (int): Number of attention heads.
+            dropout (float): Dropout rate.
+        """
         super().__init__()
 
         self.mhsa = ManualMultiHeadSelfAttention(embed_dim, heads)
@@ -123,9 +148,25 @@ class TransformerEncoder(nn.Module):
 
         return x
 
+# ---------------------------------------------
+# Vision Transformer (ViT) Model
+# ---------------------------------------------
 
 class VisionTransformer(nn.Module):
     def __init__(self,  batches=32, in_channels=3, patch_size=16, size=128, embed_dim=768, heads=12, depth=8, num_classes=10, dropout=0.15):
+        """
+        Args:
+            batches (int): Batch size.
+            in_channels (int): Number of input channels.
+            patch_size (int): Size of each image patch.
+            size (int): Input image size (height/width).
+            embed_dim (int): Dimension of patch embeddings.
+            heads (int): Number of attention heads.
+            depth (int): Number of transformer encoder blocks.
+            num_classes (int): Output classes for classification.
+            dropout (float): Dropout rate for MLP head.
+        """
+        
         super().__init__()
 
         self.patch_embedding = PatchEmbedding(batches, in_channels, patch_size, size, embed_dim)
