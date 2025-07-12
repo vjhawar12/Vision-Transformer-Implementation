@@ -56,7 +56,7 @@ Option B: Use Google Colab.
 I trained the ViT for 100 epochs using AdamW optimizer, a learning rate scheduler, and various pre-processing and image augmentation techniques.
 The NVIDIA A100 GPU was used for CUDA acceleration. Training time took 20 seconds per epoch. 
 
-CIFAR‑10 top-1 accuracy: 85.9%
+**CIFAR‑10 top-1 accuracy: 85.9%**
 
 📄 See the exact hyperparameters used in [`hyperparams.json`](hyperparams.json).
 
