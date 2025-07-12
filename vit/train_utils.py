@@ -42,7 +42,7 @@ def train(vit, device, cutmix_or_mixup_start, mixup_start, max_cutmix_or_mixup, 
         total += labels.size(0)
         correct += (pred == labels).sum().item()
 
-    return correct, total, avg_loss
+    return total, correct, avg_loss
 
 
 def validate(vit, test_dataloader, device):
@@ -60,5 +60,5 @@ def validate(vit, test_dataloader, device):
             val_total += label.size(0)
             val_correct += (pred == label).sum().item()
 
-        return val_correct, val_total
+        return val_total, val_correct
 
