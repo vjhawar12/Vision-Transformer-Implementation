@@ -50,8 +50,6 @@ jupyter notebook Vision_Transformer_from_scratch.ipynb
 
 Option B: Use Google Colab.
 
-Run the relevent sections.
-
 
 ## 🧪 Results ##
 
