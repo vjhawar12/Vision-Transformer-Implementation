@@ -62,5 +62,7 @@ CIFAR‑10 top-1 accuracy: 86.3%
 
 📄 See the exact hyperparameters used in [`hyperparams.json`](hyperparams.json).
 
+## 🤗 Model Weights download link ##
 
+Download from HuggingFace: https://huggingface.co/vjhawar12/vit-cifar10/resolve/main/vit_cifar10.pth
 
