@@ -8,8 +8,6 @@ Vision Transformers (ViTs), by contrast, represent a fundamentally different app
 
 I chose to implement a ViT to explore how attention-based architectures can be applied to domains beyond natural language processing—specifically, computer vision. I was curious to see how shifting from convolutional layers to a fully attention-based model would affect the trade-offs around scalability, data efficiency, and the richness of learned representations.
 
-Checkout **hyperparameters.json** to see my final hyperparameter values.
-
 ## 🔍 Overview
 
 This project is a PyTorch-based implementation of the paper “An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale.” It builds the Vision Transformer (ViT) architecture from scratch, including:
@@ -56,5 +54,11 @@ Run all cells sequentially.
 
 
 ## Results ##
+
+I trained the ViT using AdamW optimizer, a learning rate scheduler, and various pre-processing and image augmentation techniques.
+
 - CIFAR‑10 test accuracy: 85.7%
 - Regularization: MixUp, CutMix, stochastic depth, dropout
+- Pre-processing: Color Jitter, Horizontal Flip, RandomCrop 
+
+📄 See the exact hyperparameters used in [`hyperparams.json`](hyperparams.json).
