@@ -24,7 +24,7 @@ The training pipeline also integrates:
 
 **Data augmentation: CutMix, MixUp, horizontal flip, random crop, and color jitter**
 
-The model is trained and evaluated on the CIFAR-10 dataset, achieving a final top-1 test accuracy of **86.3%**.
+The model is trained and evaluated on the CIFAR-10 dataset, achieving a final top-1 test accuracy of **85.9%**.
 
 ## 🛠️ Dependency installation
 Clone the repo:
