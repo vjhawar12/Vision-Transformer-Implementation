@@ -50,7 +50,7 @@ jupyter notebook Vision_Transformer_from_scratch.ipynb
 
 Option B: Use Google Colab.
 
-Run all cells sequentially.
+Run the relevent sections.
 
 
 ## 🧪 Results ##
