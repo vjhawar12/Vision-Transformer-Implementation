@@ -1,4 +1,4 @@
-# final graphs
+""" Here is the data I collected over 11 trials. It is more easily viewed in the Vision_Transformer_from_scratch.ipynb file under 'notebook'. """
 
 data = {
     'Trial #': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
