@@ -26,6 +26,8 @@ The training pipeline also integrates:
 
 The model is trained and evaluated on the CIFAR-10 dataset, achieving a final test accuracy of **85.7%**.
 
+**Hyperparameters**: Check out hyperparameters.json
+
 ## 🛠️ Dependency installation
 Clone the repo:
 
