@@ -6,7 +6,7 @@ Convolutional Neural Networks (CNNs) have traditionally dominated image classifi
 
 Vision Transformers (ViTs), by contrast, represent a fundamentally different approach. Rather than using convolutions, they treat images as sequences of patches and apply self-attention to model long-range dependencies across the entire image. Originally introduced in "Attention Is All You Need", the attention mechanism enables ViTs to learn more flexible, global representations—but often at the cost of increased data and compute requirements.
 
-I chose to implement a ViT to explore how attention-based architectures can be applied to domains beyond natural language processing—specifically, computer vision. I was curious to see how shifting from convolutional priors to a fully attention-based model would affect the trade-offs around scalability, data efficiency, and the richness of learned representations.
+I chose to implement a ViT to explore how attention-based architectures can be applied to domains beyond natural language processing—specifically, computer vision. I was curious to see how shifting from convolutional layers to a fully attention-based model would affect the trade-offs around scalability, data efficiency, and the richness of learned representations.
 
 ## 🔍 Overview
 
